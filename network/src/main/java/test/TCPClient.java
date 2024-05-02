@@ -41,7 +41,7 @@ public class TCPClient {
 			System.out.println("[client] received:" + data);
 			
 		} catch (SocketException e) {
-			System.out.println("[client] suddenly closed by server");
+			System.out.println("[client] Socket Exception");
 		} catch (IOException e) {
 			System.out.println("[client] error:" + e);
 		} finally {

@@ -40,7 +40,7 @@ public class EchoClient {
 				System.out.println("<<" + data);
 			}
 		} catch(IOException e) {
-			log("error:" + e);
+			log("Socket Exception: " + e);
 		} finally {
 			try {
 				scanner.close();
