@@ -113,7 +113,6 @@ public class ChatWindow {
 	
 	private void sendMessage() {
 		String message = textField.getText();
-		//System.out.println("메세지 보내는 프로토콜을 구현!:" + message);
 		
 		textField.setText("");
 		textField.requestFocus();
@@ -125,15 +124,6 @@ public class ChatWindow {
 			printWriter.println("message:" + message);
 			printWriter.flush();
 		}
-
-		// ChatClientThread에서 서버로 부터 받은 메세지가 있다고 치고!!!!!~~~~
-		//updateTextArea("마이콜:" + message);
-		
-		
-		
-		
-		
-
 	}
 	
 	private void updateTextArea(String message) {
@@ -160,12 +150,8 @@ public class ChatWindow {
 	
 	private class ChatClientThread extends Thread {
 		public void run() {
-			// String message = br.readline();
-			//updateTextArea("마이콜:밥먹으러 가자");
 			
-			try {
-				//br = new BufferedReader(new InputStreamReader(socket.getInputStream(), "utf-8"));
-				
+			try {				
 				while(true) {
 					String data = br.readLine();
 					

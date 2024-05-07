@@ -1,6 +1,4 @@
 package chat.gui;
-import java.io.PrintWriter;
-import java.net.Socket;
 import java.util.Scanner;
 
 public class ChatClientApp {	
